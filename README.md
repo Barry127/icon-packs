@@ -19,6 +19,7 @@ yarn add icon-packs
 ```js
 import { add } from 'icon-packs/blueprint';
 import { activity } from 'icon-packs/feather';
+import { _4KFill } from 'icon-packs/remix';
 
 // render your icons with preferred framework
 ```
@@ -57,12 +58,15 @@ All packs export:
 - `VERSION` - _current version of icon pack_
 - `allIconNames` - _array of all available icon names in current icon pack_
 
-Icons with reserved filenames like `delete` or `export` are exported with an underscore after the name: `delete_` or `export_`.
+Icons with reserved filenames like `delete` or `export` are postfixed with an underscore: `delete_` or `export_`.
+
+Icons starting with a number like `4K` are prefixed with an underscore: `_4K`.
 
 ## Icons
 
 - [**Blueprint Icons**](https://blueprintjs.com/docs/#icons) License: [Apache License Version 2](https://github.com/palantir/blueprint/blob/develop/packages/icons/LICENSE)
 - [**Feather Icons**](https://feathericons.com) License: [MIT License](https://github.com/feathericons/feather/blob/master/LICENSE)
+- [**Remix Icon**](https://remixicon.com) License: [Apache License Version 2](https://github.com/Remix-Design/RemixIcon/blob/master/License)
 
 ## License
 

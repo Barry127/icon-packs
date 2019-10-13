@@ -19,4 +19,9 @@ describe('makeName', () => {
     expect(makeName('delete')).toBe('delete_');
     expect(makeName('export')).toBe('export_');
   });
+
+  it('returns a safe name for a name starting with a number', () => {
+    expect(makeName('4k')).toBe('_4K');
+    expect(makeName('8k')).toBe('_8K');
+  });
 });

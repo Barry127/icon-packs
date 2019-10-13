@@ -1,4 +1,5 @@
 import xmldom from 'xmldom';
+import camelCase from 'camelcase';
 
 import { Icon } from '../types';
 
@@ -69,7 +70,7 @@ function parseAttrs(node: Element): Icon['attrs'] {
     .filter(([key]) => !(key.startsWith('_') || filters.includes(key)))
     .reduce((attrs: Icon['attrs'], [key, value]) => {
       //@ts-ignore
-      attrs[value.name] = value.value;
+      attrs[camelCase(value.name)] = value.value;
       return attrs;
     }, {});
 }

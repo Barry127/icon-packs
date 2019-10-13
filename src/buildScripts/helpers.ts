@@ -12,7 +12,11 @@ export const reservedNames = [
 
 export const makeName = (name: string) => {
   const iconName = camelCase(name);
-  return reservedNames.includes(iconName) ? `${iconName}_` : iconName;
+  return iconName.match(/^\d/)
+    ? `_${iconName}`
+    : reservedNames.includes(iconName)
+    ? `${iconName}_`
+    : iconName;
 };
 
 export const appendToFile = (data: string, file: string = '') =>
