@@ -7,9 +7,9 @@ import buildTypicons from './buildTypicons';
 build();
 
 function build() {
-  // buildBlueprint();
-  // buildFeather();
-  // buildRemix();
+  buildBlueprint();
+  buildFeather();
+  buildRemix();
   buildTypicons();
 
   console.log(chalk.bold.magentaBright('Compiling...'));
