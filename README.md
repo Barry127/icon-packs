@@ -20,6 +20,7 @@ yarn add icon-packs
 import { add } from 'icon-packs/blueprint';
 import { activity } from 'icon-packs/feather';
 import { _4KFill } from 'icon-packs/remix';
+import { adjustBrightness } from 'icon-packs/typicons';
 
 // render your icons with preferred framework
 ```
@@ -64,9 +65,10 @@ Icons starting with a number like `4K` are prefixed with an underscore: `_4K`.
 
 ## Icons
 
-- [**Blueprint Icons**](https://blueprintjs.com/docs/#icons) License: [Apache License Version 2](https://github.com/palantir/blueprint/blob/develop/packages/icons/LICENSE)
+- [**Blueprint Icons**](https://blueprintjs.com/docs/#icons) License: [Apache License Version 2.0](https://github.com/palantir/blueprint/blob/develop/packages/icons/LICENSE)
 - [**Feather Icons**](https://feathericons.com) License: [MIT License](https://github.com/feathericons/feather/blob/master/LICENSE)
-- [**Remix Icon**](https://remixicon.com) License: [Apache License Version 2](https://github.com/Remix-Design/RemixIcon/blob/master/License)
+- [**Remix Icon**](https://remixicon.com) License: [Apache License Version 2.0](https://github.com/Remix-Design/RemixIcon/blob/master/License)
+- [**Typicons**](https://www.s-ings.com/typicons) License [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/)
 
 ## License
 

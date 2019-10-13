@@ -5,7 +5,6 @@ import chalk from 'chalk';
 //@ts-ignore
 import packageJson from 'remixicon/package.json';
 
-import { Icon } from '../types';
 import { appendToFile, writeFileToDisc, makeName } from './helpers';
 import { parseXml } from './parseXml';
 
@@ -32,7 +31,6 @@ export default function build() {
 
   const allIconNames: string[] = [];
 
-  // build here
   fs.readdirSync(ICONS_DIR)
     .map(subDir => path.join(ICONS_DIR, subDir))
     .forEach(iconDir => {
