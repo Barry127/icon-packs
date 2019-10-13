@@ -1,0 +1,54 @@
+{
+  "name": "icon-packs",
+  "version": "0.0.1",
+  "description": "Icons for react",
+  "main": "index.js",
+  "author": "Barry de Kleijn <kleijn.barry@gmail.com>",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "clear": "rimraf index.* types.* blueprint",
+    "prebuild": "npm run clear",
+    "build": "TS_NODE_COMPILER_OPTIONS='{\"module\":\"commonjs\"}' ts-node src/buildScripts/index.ts && tsc",
+    "postbuild": "rimraf src/blueprint",
+    "prepublish": "npm run build",
+    "test": "jest --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Barry127/icons-pack.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Barry127/icons-pack/issues"
+  },
+  "devDependencies": {
+    "@types/jest": "^24.0.18",
+    "@types/node": "^12.7.12",
+    "camelcase": "^5.3.1",
+    "chalk": "^2.4.2",
+    "jest": "^24.9.0",
+    "rimraf": "^3.0.0",
+    "ts-jest": "^24.1.0",
+    "ts-node": "^8.4.1",
+    "typescript": "^3.6.4"
+  },
+  "dependencies": {
+    "@blueprintjs/icons": "^3.11.0",
+    "@types/react": "^16.9.5"
+  },
+  "jest": {
+    "transform": {
+      ".(ts|tsx)": "ts-jest"
+    },
+    "testRegex": "(/__tests__/.*|\\.(test|spec))\\.(ts|tsx|js)$",
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js",
+      "json"
+    ],
+    "modulePaths": [
+      "src"
+    ]
+  }
+}

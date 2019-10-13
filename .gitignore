@@ -1,3 +1,8 @@
+# Production files
+/index.*
+/types.*
+/blueprint
+
 # Logs
 logs
 *.log
