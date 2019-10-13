@@ -2,13 +2,12 @@ import path from 'path';
 import fs from 'fs';
 
 import chalk from 'chalk';
-import camelCase from 'camelcase';
 import { IconSvgPaths16, IconSvgPaths20 } from '@blueprintjs/icons';
 //@ts-ignore
 import packageJson from '@blueprintjs/icons/package.json';
 
 import { Icon } from '../types';
-import { appendToFile, writeFileToDisc, reservedNames } from './helpers';
+import { appendToFile, writeFileToDisc, makeName } from './helpers';
 
 const SRC = path.join(__dirname, '..');
 const DIR = path.join(SRC, 'blueprint');
@@ -26,8 +25,7 @@ export default function build() {
   Object.keys(IconSvgPaths20).forEach(name => {
     //@ts-ignore
     const icon = createIconFromPaths(name, IconSvgPaths20[name]);
-    const ccIcon = camelCase(name);
-    const iconName = reservedNames.includes(ccIcon) ? ccIcon + '_' : ccIcon;
+    const iconName = makeName(name);
     allIconNames.push(iconName);
     file = appendToFile(
       `export const ${iconName}: Icon = ${JSON.stringify(icon, null, 2)}`,
@@ -39,7 +37,7 @@ export default function build() {
   Object.keys(IconSvgPaths16).forEach(name => {
     //@ts-ignore
     const icon = createIconFromPaths(name, IconSvgPaths20[name]);
-    const iconName = `${camelCase(name)}16`;
+    const iconName = makeName(`${name}16`);
     allIconNames.push(iconName);
     file = appendToFile(
       `export const ${iconName}: Icon = ${JSON.stringify(icon, null, 2)}`,

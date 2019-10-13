@@ -10,8 +10,9 @@
     "clear": "rimraf index.* types.* blueprint",
     "prebuild": "npm run clear",
     "build": "TS_NODE_COMPILER_OPTIONS='{\"module\":\"commonjs\"}' ts-node src/buildScripts/index.ts && tsc",
-    "postbuild": "rimraf src/blueprint",
+    "postbuild": "rimraf src/blueprint src/feather",
     "prepublish": "npm run build",
+    "postpublish": "npm run clear",
     "test": "jest --watch"
   },
   "repository": {
@@ -22,15 +23,19 @@
     "url": "https://github.com/Barry127/icons-pack/issues"
   },
   "devDependencies": {
+    "@types/feather-icons": "^4.7.0",
     "@types/jest": "^24.0.18",
     "@types/node": "^12.7.12",
+    "@types/xmldom": "^0.1.29",
     "camelcase": "^5.3.1",
     "chalk": "^2.4.2",
+    "feather-icons": "^4.24.1",
     "jest": "^24.9.0",
     "rimraf": "^3.0.0",
     "ts-jest": "^24.1.0",
     "ts-node": "^8.4.1",
-    "typescript": "^3.6.4"
+    "typescript": "^3.6.4",
+    "xmldom": "^0.1.27"
   },
   "dependencies": {
     "@blueprintjs/icons": "^3.11.0",

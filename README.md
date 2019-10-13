@@ -18,8 +18,9 @@ yarn add icon-packs
 
 ```js
 import { add } from 'icon-packs/blueprint';
+import { activity } from 'icon-packs/feather';
 
-// render your add icon with preferred framework
+// render your icons with preferred framework
 ```
 
 ### Format
@@ -56,9 +57,12 @@ All packs export:
 - `VERSION` - _current version of icon pack_
 - `allIconNames` - _array of all available icon names in current icon pack_
 
+Icons with reserved filenames like `delete` or `export` are exported with an underscore after the name: `delete_` or `export_`.
+
 ## Icons
 
 - [**Blueprint Icons**](https://blueprintjs.com/docs/#icons) License: [Apache License Version 2](https://github.com/palantir/blueprint/blob/develop/packages/icons/LICENSE)
+- [**Feather Icons**](https://feathericons.com) License: [MIT License](https://github.com/feathericons/feather/blob/master/LICENSE)
 
 ## License
 
