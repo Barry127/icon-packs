@@ -49,7 +49,7 @@ export default function build() {
   console.log();
 }
 
-const blackListAttrs = ['class', 'height', 'width', 'aria-hidden'];
+const blackListAttrs = ['class', 'aria-hidden'];
 
 function createIcon(icon: Octicon): Icon {
   const children = [parseXml(icon.path) as Icon];

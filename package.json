@@ -7,10 +7,10 @@
   "license": "MIT",
   "private": false,
   "scripts": {
-    "clear": "rimraf index.* types.* blueprint feather octicons remix typicons",
+    "clear": "rimraf index.* types.* blueprint devicons feather octicons remix typicons",
     "prebuild": "npm run clear",
     "build": "TS_NODE_COMPILER_OPTIONS='{\"module\":\"commonjs\"}' ts-node src/buildScripts/index.ts && tsc",
-    "postbuild": "rimraf src/blueprint src/feather src/octicons src/remix src/typicons",
+    "postbuild": "rimraf src/blueprint src/devicons src/feather src/octicons src/remix src/typicons",
     "prepublish": "npm run test:ci & npm run build",
     "postpublish": "npm run clear",
     "test": "jest --watch",
@@ -24,6 +24,7 @@
     "url": "https://github.com/Barry127/icons-pack/issues"
   },
   "devDependencies": {
+    "@blueprintjs/icons": "^3.11.0",
     "@primer/octicons": "^9.1.1",
     "@types/feather-icons": "^4.7.0",
     "@types/jest": "^24.0.18",
@@ -31,6 +32,7 @@
     "@types/xmldom": "^0.1.29",
     "camelcase": "^5.3.1",
     "chalk": "^2.4.2",
+    "devicons": "^1.8.0",
     "feather-icons": "^4.24.1",
     "jest": "^24.9.0",
     "remixicon": "^2.0.0",
@@ -42,7 +44,6 @@
     "xmldom": "^0.1.27"
   },
   "dependencies": {
-    "@blueprintjs/icons": "^3.11.0",
     "@types/react": "^16.9.5"
   },
   "jest": {

@@ -61,6 +61,7 @@
   "include": [
     "src/index.ts",
     "src/blueprint",
+    "src/devicons",
     "src/feather",
     "src/octicons",
     "src/remix",
