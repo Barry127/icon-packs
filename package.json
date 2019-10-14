@@ -7,10 +7,10 @@
   "license": "MIT",
   "private": false,
   "scripts": {
-    "clear": "rimraf index.* types.* blueprint feather remix typicons",
+    "clear": "rimraf index.* types.* blueprint feather octicons remix typicons",
     "prebuild": "npm run clear",
     "build": "TS_NODE_COMPILER_OPTIONS='{\"module\":\"commonjs\"}' ts-node src/buildScripts/index.ts && tsc",
-    "postbuild": "rimraf src/blueprint src/feather src/remix src/typicons",
+    "postbuild": "rimraf src/blueprint src/feather src/octicons src/remix src/typicons",
     "prepublish": "npm run test:ci & npm run build",
     "postpublish": "npm run clear",
     "test": "jest --watch",
@@ -24,6 +24,7 @@
     "url": "https://github.com/Barry127/icons-pack/issues"
   },
   "devDependencies": {
+    "@primer/octicons": "^9.1.1",
     "@types/feather-icons": "^4.7.0",
     "@types/jest": "^24.0.18",
     "@types/node": "^12.7.12",

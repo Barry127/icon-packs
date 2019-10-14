@@ -62,6 +62,7 @@
     "src/index.ts",
     "src/blueprint",
     "src/feather",
+    "src/octicons",
     "src/remix",
     "src/typicons"
   ],
