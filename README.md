@@ -20,6 +20,7 @@ yarn add icon-packs
 import { add } from 'icon-packs/blueprint';
 import { android } from 'icon-packs/devicons';
 import { activity } from 'icon-packs/feather';
+import { iosAdd } from 'icon-packs/ionicons';
 import { alert } from 'icon-packs/octicons';
 import { _4KFill } from 'icon-packs/remix';
 import { adjustBrightness } from 'icon-packs/typicons';
@@ -71,6 +72,7 @@ Icons starting with a number like `4K` are prefixed with an underscore: `_4K`.
 - [**Devicons**](https://vorillaz.github.io/devicons) License: [MIT License](https://opensource.org/licenses/MIT)
 - [**Feather Icons**](https://feathericons.com) License: [MIT License](https://github.com/feathericons/feather/blob/master/LICENSE)
 - [**GitHub Octicons**](https://octicons.github.com/) :License [MIT License](https://github.com/primer/octicons/blob/master/LICENSE)
+- [**Ionicons**](https://ionicons.com) License [MIT License](https://github.com/ionic-team/ionicons/blob/master/LICENSE)
 - [**Remix Icon**](https://remixicon.com) License: [Apache License Version 2.0](https://github.com/Remix-Design/RemixIcon/blob/master/License)
 - [**Typicons**](https://www.s-ings.com/typicons) License [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/)
 

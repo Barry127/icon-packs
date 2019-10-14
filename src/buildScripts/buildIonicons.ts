@@ -2,29 +2,30 @@ import path from 'path';
 import fs from 'fs';
 
 import chalk from 'chalk';
+
 //@ts-ignore
-import packageJson from 'typicons.font/package.json';
+import packageJson from 'ionicons/package.json';
 
 import { appendToFile, writeFileToDisc, makeName } from './helpers';
 import { parseXml } from './parseXml';
 
 const SRC = path.join(__dirname, '..');
-const DIR = path.join(SRC, 'typicons');
+const DIR = path.join(SRC, 'ionicons');
 
 const ICONS_DIR = path.join(
   __dirname,
   '..',
   '..',
   'node_modules',
-  'typicons.font',
-  'src',
+  'ionicons',
+  'dist',
+  'ionicons',
   'svg'
 );
 
 export default function build() {
-  console.log(chalk.blue.bold('Building Typicons'));
+  console.log(chalk.blue.bold('Building Ionicons'));
   let file = "import { Icon } from '../types'";
-
   file = appendToFile(`export const VERSION = '${packageJson.version}'`, file);
 
   fs.mkdirSync(DIR);
@@ -51,7 +52,7 @@ export default function build() {
   );
 
   writeFileToDisc(path.join(DIR, 'index.ts'), file);
-  console.log(chalk.green.bold('Created Typicons'));
+  console.log(chalk.green.bold('Created Ionicons'));
   console.log();
   console.log();
 }
