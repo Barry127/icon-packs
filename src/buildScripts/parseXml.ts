@@ -2,6 +2,7 @@ import xmldom from 'xmldom';
 import camelCase from 'camelcase';
 
 import { Icon } from '../types';
+import { CSSProperties } from 'react';
 
 const { DOMParser } = xmldom;
 
@@ -71,6 +72,23 @@ function parseAttrs(node: Element): Icon['attrs'] {
     .reduce((attrs: Icon['attrs'], [key, value]) => {
       //@ts-ignore
       attrs[camelCase(value.name)] = value.value;
+      if (value.name === 'style') {
+        attrs.style = parseStyle(value.value);
+      }
       return attrs;
     }, {});
+}
+
+function parseStyle(style: string): CSSProperties {
+  const styles = {} as CSSProperties;
+
+  style.split(';').forEach(rule => {
+    if ((rule.match(/\:/g) || []).length === 1) {
+      const [key, value] = rule.split(':');
+      //@ts-ignore
+      styles[camelCase(key)] = value.trim();
+    }
+  });
+
+  return styles;
 }

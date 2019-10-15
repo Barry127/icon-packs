@@ -1,3 +1,6 @@
 [submodule "submodules/weather-icons"]
 	path = submodules/weather-icons
 	url = https://github.com/erikflowers/weather-icons
+[submodule "submodules/game-icons"]
+	path = submodules/game-icons
+	url = https://github.com/game-icons/icons

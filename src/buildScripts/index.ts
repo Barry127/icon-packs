@@ -2,6 +2,7 @@ import chalk from 'chalk';
 import buildBlueprint from './buildBlueprint';
 import buildDevicons from './buildDevicons';
 import buildFeather from './buildFeather';
+import buildGame from './buildGame';
 import buildIonicons from './buildIonicons';
 import buildOpticons from './buildOcticons';
 import buildRemix from './buildRemix';
@@ -14,6 +15,7 @@ function build() {
   buildBlueprint();
   buildDevicons();
   buildFeather();
+  buildGame();
   buildIonicons();
   buildOpticons();
   buildRemix();

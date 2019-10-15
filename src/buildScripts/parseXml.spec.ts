@@ -54,7 +54,8 @@ describe('parseXml', () => {
   });
 
   it('parses fragments', () => {
-    const xml = '<path d="a" /><path d="b" />';
+    const xml =
+      '<path d="a" /><path d="b" style="color: red; background: blue" />';
     const expected = {
       tag: 'div',
       attrs: {},
@@ -68,7 +69,11 @@ describe('parseXml', () => {
         {
           tag: 'path',
           attrs: {
-            d: 'b'
+            d: 'b',
+            style: {
+              color: 'red',
+              background: 'blue'
+            }
           }
         }
       ]

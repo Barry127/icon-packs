@@ -20,6 +20,7 @@ yarn add icon-packs
 import { add } from 'icon-packs/blueprint';
 import { android } from 'icon-packs/devicons';
 import { activity } from 'icon-packs/feather';
+import { _3DHammer } from 'icon-packs/game';
 import { iosAdd } from 'icon-packs/ionicons';
 import { alert } from 'icon-packs/octicons';
 import { _4KFill } from 'icon-packs/remix';
@@ -72,6 +73,7 @@ Icons starting with a number like `4K` are prefixed with an underscore: `_4K`.
 - [**Blueprint Icons**](https://blueprintjs.com/docs/#icons) License: [Apache License Version 2.0](https://github.com/palantir/blueprint/blob/develop/packages/icons/LICENSE)
 - [**Devicons**](https://vorillaz.github.io/devicons) License: [MIT License](https://opensource.org/licenses/MIT)
 - [**Feather Icons**](https://feathericons.com) License: [MIT License](https://github.com/feathericons/feather/blob/master/LICENSE)
+- [**Game Icons**](https://game-icons.net) License: [CC BY 3.0](https://github.com/game-icons/icons/blob/master/license.txt)
 - [**GitHub Octicons**](https://octicons.github.com/) :License [MIT License](https://github.com/primer/octicons/blob/master/LICENSE)
 - [**Ionicons**](https://ionicons.com) License [MIT License](https://github.com/ionic-team/ionicons/blob/master/LICENSE)
 - [**Remix Icon**](https://remixicon.com) License: [Apache License Version 2.0](https://github.com/Remix-Design/RemixIcon/blob/master/License)

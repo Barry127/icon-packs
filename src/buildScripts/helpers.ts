@@ -3,11 +3,14 @@ import fs from 'fs';
 import camelCase from 'camelcase';
 
 export const reservedNames = [
+  'catch',
   'delete',
   'export',
   'function',
   'import',
-  'package'
+  'package',
+  'private',
+  'static'
 ];
 
 export const makeName = (name: string) => {
