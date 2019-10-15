@@ -3,29 +3,29 @@ import fs from 'fs';
 
 import chalk from 'chalk';
 //@ts-ignore
-import packageJson from 'devicons/package.json';
+import bowerJson from '../../submodules/weather-icons/bower.json';
 
 import { Icon } from '../types';
 import { appendToFile, writeFileToDisc, makeName } from './helpers';
 import { parseXml } from './parseXml';
 
 const SRC = path.join(__dirname, '..');
-const DIR = path.join(SRC, 'devicons');
+const DIR = path.join(SRC, 'weather');
 
 const ICONS_DIR = path.join(
   __dirname,
   '..',
   '..',
-  'node_modules',
-  'devicons',
-  '!SVG'
+  'submodules',
+  'weather-icons',
+  'svg'
 );
 
 export default function build() {
-  console.log(chalk.blue.bold('Building Devicons'));
+  console.log(chalk.blue.bold('Building Weather Icons'));
   let file = "import { Icon } from '../types'";
 
-  file = appendToFile(`export const VERSION = '${packageJson.version}'`, file);
+  file = appendToFile(`export const VERSION = '${bowerJson.version}'`, file);
 
   fs.mkdirSync(DIR);
   console.log(`created ${chalk.italic(DIR)}`);
@@ -39,6 +39,10 @@ export default function build() {
     const icon = parseXml(iconData.substr(iconData.indexOf('<svg'))) as Icon;
     //@ts-ignore
     delete icon.attrs['xmlns:xlink'];
+    //@ts-ignore
+    delete icon.attrs['xml:space'];
+    delete icon.attrs['style'];
+    delete icon.attrs['id'];
 
     const iconName = makeName(iconFile.slice(0, -4));
     allIconNames.push(iconName);
@@ -56,7 +60,7 @@ export default function build() {
   );
 
   writeFileToDisc(path.join(DIR, 'index.ts'), file);
-  console.log(chalk.green.bold('Created Devicons'));
+  console.log(chalk.green.bold('Created Weather Icons'));
   console.log();
   console.log();
 }

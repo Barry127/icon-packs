@@ -6,6 +6,7 @@ import buildIonicons from './buildIonicons';
 import buildOpticons from './buildOcticons';
 import buildRemix from './buildRemix';
 import buildTypicons from './buildTypicons';
+import buildWeather from './buildWeather';
 
 build();
 
@@ -17,6 +18,7 @@ function build() {
   buildOpticons();
   buildRemix();
   buildTypicons();
+  buildWeather();
 
   console.log(chalk.bold.magentaBright('Compiling...'));
 }
