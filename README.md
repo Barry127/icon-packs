@@ -23,6 +23,7 @@ import { _500Px } from 'icon-packs/fa';
 import { activity } from 'icon-packs/feather';
 import { _3DHammer } from 'icon-packs/game';
 import { iosAdd } from 'icon-packs/ionicons';
+import { _3DRotation24 } from 'icon-packs/material';
 import { alert } from 'icon-packs/octicons';
 import { _4KFill } from 'icon-packs/remix';
 import { adjustBrightness } from 'icon-packs/typicons';
@@ -78,6 +79,7 @@ Icons starting with a number like `4K` are prefixed with an underscore: `_4K`.
 - [**Game Icons**](https://game-icons.net) License: [CC BY 3.0](https://github.com/game-icons/icons/blob/master/license.txt)
 - [**GitHub Octicons**](https://octicons.github.com/) :License [MIT License](https://github.com/primer/octicons/blob/master/LICENSE)
 - [**Ionicons**](https://ionicons.com) License [MIT License](https://github.com/ionic-team/ionicons/blob/master/LICENSE)
+- [**Material Icons**](http://google.github.io/material-design-icons) License [Apache License Version 2.0](https://github.com/google/material-design-icons/blob/master/LICENSE)
 - [**Remix Icon**](https://remixicon.com) License: [Apache License Version 2.0](https://github.com/Remix-Design/RemixIcon/blob/master/License)
 - [**Typicons**](https://www.s-ings.com/typicons) License [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/)
 - [**Weather Icons**](https://erikflowers.github.io/weather-icons) License [SIL OFL 1.1](https://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=OFL)

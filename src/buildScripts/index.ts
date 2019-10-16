@@ -5,6 +5,7 @@ import buildFeather from './buildFeather';
 import buildFontAwesome from './buildFontAwesome';
 import buildGame from './buildGame';
 import buildIonicons from './buildIonicons';
+import buildMaterial from './buildMaterial';
 import buildOpticons from './buildOcticons';
 import buildRemix from './buildRemix';
 import buildTypicons from './buildTypicons';
@@ -19,6 +20,7 @@ function build() {
   buildFontAwesome();
   buildGame();
   buildIonicons();
+  buildMaterial();
   buildOpticons();
   buildRemix();
   buildTypicons();
