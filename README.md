@@ -19,6 +19,7 @@ yarn add icon-packs
 ```js
 import { add } from 'icon-packs/blueprint';
 import { android } from 'icon-packs/devicons';
+import { _500Px } from 'icon-packs/fa';
 import { activity } from 'icon-packs/feather';
 import { _3DHammer } from 'icon-packs/game';
 import { iosAdd } from 'icon-packs/ionicons';
@@ -73,6 +74,7 @@ Icons starting with a number like `4K` are prefixed with an underscore: `_4K`.
 - [**Blueprint Icons**](https://blueprintjs.com/docs/#icons) License: [Apache License Version 2.0](https://github.com/palantir/blueprint/blob/develop/packages/icons/LICENSE)
 - [**Devicons**](https://vorillaz.github.io/devicons) License: [MIT License](https://opensource.org/licenses/MIT)
 - [**Feather Icons**](https://feathericons.com) License: [MIT License](https://github.com/feathericons/feather/blob/master/LICENSE)
+- [**Font Awesome Free**](https://fontawesome.com/) License: [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)
 - [**Game Icons**](https://game-icons.net) License: [CC BY 3.0](https://github.com/game-icons/icons/blob/master/license.txt)
 - [**GitHub Octicons**](https://octicons.github.com/) :License [MIT License](https://github.com/primer/octicons/blob/master/LICENSE)
 - [**Ionicons**](https://ionicons.com) License [MIT License](https://github.com/ionic-team/ionicons/blob/master/LICENSE)

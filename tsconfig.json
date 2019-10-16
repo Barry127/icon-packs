@@ -62,6 +62,7 @@
     "src/index.ts",
     "src/blueprint",
     "src/devicons",
+    "src/fa",
     "src/feather",
     "src/game",
     "src/ionicons",
