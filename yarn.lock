@@ -3092,6 +3092,11 @@ signal-exit@^3.0.0, signal-exit@^3.0.2:
   resolved "https://registry.yarnpkg.com/signal-exit/-/signal-exit-3.0.2.tgz#b5fdc08f1287ea1178628e415e25132b73646c6d"
   integrity sha1-tf3AjxKH6hF4Yo5BXiUTK3NkbG0=
 
+simple-icons@^1.18.0:
+  version "1.18.0"
+  resolved "https://registry.yarnpkg.com/simple-icons/-/simple-icons-1.18.0.tgz#2350d15389771412ec7301d525d6ed6277a1d017"
+  integrity sha512-zarcqLq6DL96q7rSHeh/bM/xlflp1Uil7lyz7KHK4bg+92vcA+BJ1CpjA62Xe1KnfeOSEmTXHR6ftaFYiaSaNQ==
+
 sisteransi@^1.0.3:
   version "1.0.3"
   resolved "https://registry.yarnpkg.com/sisteransi/-/sisteransi-1.0.3.tgz#98168d62b79e3a5e758e27ae63c4a053d748f4eb"

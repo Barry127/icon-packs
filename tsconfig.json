@@ -69,6 +69,7 @@
     "src/material",
     "src/octicons",
     "src/remix",
+    "src/simple",
     "src/typicons",
     "src/weather"
   ],

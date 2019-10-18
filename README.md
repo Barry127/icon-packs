@@ -26,6 +26,7 @@ import { iosAdd } from 'icon-packs/ionicons';
 import { _3DRotation24 } from 'icon-packs/material';
 import { alert } from 'icon-packs/octicons';
 import { _4KFill } from 'icon-packs/remix';
+import { aboutMe } from 'icon-packs/simple';
 import { adjustBrightness } from 'icon-packs/typicons';
 import { wiAlien } from 'icon-packs/weather';
 
@@ -81,6 +82,7 @@ Icons starting with a number like `4K` are prefixed with an underscore: `_4K`.
 - [**Ionicons**](https://ionicons.com) License [MIT License](https://github.com/ionic-team/ionicons/blob/master/LICENSE)
 - [**Material Icons**](http://google.github.io/material-design-icons) License [Apache License Version 2.0](https://github.com/google/material-design-icons/blob/master/LICENSE)
 - [**Remix Icon**](https://remixicon.com) License: [Apache License Version 2.0](https://github.com/Remix-Design/RemixIcon/blob/master/License)
+- [**Simple Icons**](https://simpleicons.org) License [CC0 1.0 Universal](https://github.com/simple-icons/simple-icons/blob/develop/LICENSE.md)
 - [**Typicons**](https://www.s-ings.com/typicons) License [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/)
 - [**Weather Icons**](https://erikflowers.github.io/weather-icons) License [SIL OFL 1.1](https://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=OFL)
 

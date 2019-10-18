@@ -8,6 +8,7 @@ import buildIonicons from './buildIonicons';
 import buildMaterial from './buildMaterial';
 import buildOpticons from './buildOcticons';
 import buildRemix from './buildRemix';
+import buildSimple from './buildSimple';
 import buildTypicons from './buildTypicons';
 import buildWeather from './buildWeather';
 
@@ -23,6 +24,7 @@ function build() {
   buildMaterial();
   buildOpticons();
   buildRemix();
+  buildSimple();
   buildTypicons();
   buildWeather();
 

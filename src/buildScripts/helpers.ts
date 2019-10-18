@@ -14,6 +14,15 @@ export const reservedNames = [
 ];
 
 export const makeName = (name: string) => {
+  if (name.startsWith('.')) {
+    name = `dot_${name}`;
+  }
+  name = name.replace(/\&/g, '_and_');
+  name = name.replace(/\+/g, '_plus_');
+  name = name.replace(/\'/g, '');
+  name = name.replace(/\’/g, '');
+  name = name.replace(/\!/g, '');
+
   const iconName = camelCase(name);
   return iconName.match(/^\d/)
     ? `_${iconName}`
