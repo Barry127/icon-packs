@@ -1,5 +1,6 @@
 import chalk from 'chalk';
 import buildBlueprint from './buildBlueprint';
+import buildClarity from './buildClarity';
 import buildDevicons from './buildDevicons';
 import buildFeather from './buildFeather';
 import buildFontAwesome from './buildFontAwesome';
@@ -16,6 +17,7 @@ build();
 
 function build() {
   buildBlueprint();
+  buildClarity();
   buildDevicons();
   buildFeather();
   buildFontAwesome();

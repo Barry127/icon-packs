@@ -4,3 +4,6 @@
 [submodule "submodules/game-icons"]
 	path = submodules/game-icons
 	url = https://github.com/game-icons/icons
+[submodule "submodules/clarity-icons"]
+	path = submodules/clarity-icons
+	url = https://github.com/vmware/clarity-assets

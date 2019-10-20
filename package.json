@@ -7,10 +7,10 @@
   "license": "MIT",
   "private": false,
   "scripts": {
-    "clear": "rimraf index.* types.* blueprint devicons fa feather game ionicons material octicons remix simple typicons weather",
+    "clear": "rimraf index.* types.* blueprint clarity devicons fa feather game ionicons material octicons remix simple typicons weather",
     "prebuild": "npm run clear",
     "build": "TS_NODE_COMPILER_OPTIONS='{\"module\":\"commonjs\"}' ts-node src/buildScripts/index.ts && tsc",
-    "postbuild": "rimraf src/blueprint src/devicons src/fa src/feather src/game src/ionicons src/material src/octicons src/remix src/simple src/typicons src/weather",
+    "postbuild": "rimraf src/blueprint src/clarity src/devicons src/fa src/feather src/game src/ionicons src/material src/octicons src/remix src/simple src/typicons src/weather",
     "prepublish": "npm run test:ci & npm run build",
     "postpublish": "npm run clear",
     "test": "jest --watch",

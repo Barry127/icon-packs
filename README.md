@@ -18,6 +18,7 @@ yarn add icon-packs
 
 ```js
 import { add } from 'icon-packs/blueprint';
+import { accessibility1Line } from 'icon-packs/clarity';
 import { android } from 'icon-packs/devicons';
 import { _500Px } from 'icon-packs/fa';
 import { activity } from 'icon-packs/feather';
@@ -74,6 +75,7 @@ Icons starting with a number like `4K` are prefixed with an underscore: `_4K`.
 ## Icons
 
 - [**Blueprint Icons**](https://blueprintjs.com/docs/#icons) License: [Apache License Version 2.0](https://github.com/palantir/blueprint/blob/develop/packages/icons/LICENSE)
+- [**Clarity Icons**](https://clarity.design/icons) License: [MIT License](https://github.com/vmware/clarity-assets/blob/master/LICENSE)
 - [**Devicons**](https://vorillaz.github.io/devicons) License: [MIT License](https://opensource.org/licenses/MIT)
 - [**Feather Icons**](https://feathericons.com) License: [MIT License](https://github.com/feathericons/feather/blob/master/LICENSE)
 - [**Font Awesome Free**](https://fontawesome.com/) License: [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)
