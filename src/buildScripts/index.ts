@@ -1,4 +1,6 @@
 import chalk from 'chalk';
+
+import buildAnt from './buildAnt';
 import buildBlueprint from './buildBlueprint';
 import buildClarity from './buildClarity';
 import buildDevicons from './buildDevicons';
@@ -16,6 +18,7 @@ import buildWeather from './buildWeather';
 build();
 
 function build() {
+  buildAnt();
   buildBlueprint();
   buildClarity();
   buildDevicons();

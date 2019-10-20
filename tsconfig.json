@@ -60,6 +60,7 @@
   },
   "include": [
     "src/index.ts",
+    "src/ant",
     "src/blueprint",
     "src/clarity",
     "src/devicons",

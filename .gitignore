@@ -1,6 +1,7 @@
 # Production files
 /index.*
 /types.*
+/ant
 /blueprint
 /clarity
 /devicons

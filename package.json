@@ -7,10 +7,10 @@
   "license": "MIT",
   "private": false,
   "scripts": {
-    "clear": "rimraf index.* types.* blueprint clarity devicons fa feather game ionicons material octicons remix simple typicons weather",
+    "clear": "rimraf index.* types.* ant blueprint clarity devicons fa feather game ionicons material octicons remix simple typicons weather",
     "prebuild": "npm run clear",
     "build": "TS_NODE_COMPILER_OPTIONS='{\"module\":\"commonjs\"}' ts-node src/buildScripts/index.ts && tsc",
-    "postbuild": "rimraf src/blueprint src/clarity src/devicons src/fa src/feather src/game src/ionicons src/material src/octicons src/remix src/simple src/typicons src/weather",
+    "postbuild": "rimraf src/ant src/blueprint src/clarity src/devicons src/fa src/feather src/game src/ionicons src/material src/octicons src/remix src/simple src/typicons src/weather",
     "prepublish": "npm run test:ci & npm run build",
     "postpublish": "npm run clear",
     "test": "jest --watch",
@@ -24,6 +24,7 @@
     "url": "https://github.com/Barry127/icons-pack/issues"
   },
   "devDependencies": {
+    "@ant-design/icons-svg": "^4.0.0-alpha.0",
     "@blueprintjs/icons": "^3.11.0",
     "@fortawesome/fontawesome-free": "^5.11.2",
     "@primer/octicons": "^9.1.1",
