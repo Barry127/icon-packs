@@ -7,6 +7,7 @@ import packageJson from 'remixicon/package.json';
 
 import { appendToFile, writeFileToDisc, makeName } from './helpers';
 import { parseXml } from './parseXml';
+import { Icon } from '../types';
 
 const SRC = path.join(__dirname, '..');
 const DIR = path.join(SRC, 'remix');
@@ -36,7 +37,11 @@ export default function build() {
     .forEach(iconDir => {
       fs.readdirSync(iconDir).forEach(iconFile => {
         const fullIconFile = path.join(iconDir, iconFile);
-        const icon = parseXml(fs.readFileSync(fullIconFile, 'utf8'));
+        const icon = parseXml(fs.readFileSync(fullIconFile, 'utf8')) as Icon;
+        //@ts-ignore
+        icon.children[0]!.children = icon.children[0]!.children.filter(
+          (child: Icon) => child.attrs.fill !== 'none'
+        );
         const iconName = makeName(iconFile.slice(0, -4));
         allIconNames.push(iconName);
         file = appendToFile(
