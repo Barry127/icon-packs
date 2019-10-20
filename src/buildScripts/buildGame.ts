@@ -31,7 +31,9 @@ export default function build() {
         const fullIconFile = path.join(iconDir, iconFile);
         const icon = parseXml(fs.readFileSync(fullIconFile, 'utf8')) as Icon;
         if (Array.isArray(icon.children)) {
-          icon.children = icon.children.filter((icon, index) => index !== 0);
+          icon.children = icon.children.filter(
+            (icon, index, self) => self.length === 1 || index !== 0
+          );
         }
         let iconName = makeName(iconFile.slice(0, -4));
         let i = 2;
