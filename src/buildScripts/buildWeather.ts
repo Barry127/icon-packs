@@ -37,10 +37,6 @@ export default function build() {
 
     const iconData = fs.readFileSync(fullIconFile, 'utf8');
     const icon = parseXml(iconData.substr(iconData.indexOf('<svg'))) as Icon;
-    //@ts-ignore
-    delete icon.attrs['xmlns:xlink'];
-    //@ts-ignore
-    delete icon.attrs['xml:space'];
     delete icon.attrs['style'];
     delete icon.attrs['id'];
 

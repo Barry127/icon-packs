@@ -7,7 +7,6 @@ import packageJson from 'material-design-icons/package.json';
 
 import { appendToFile, writeFileToDisc, makeName } from './helpers';
 import { parseXml } from './parseXml';
-import { readFileSync } from 'jest-serializer';
 
 const SRC = path.join(__dirname, '..');
 const DIR = path.join(SRC, 'material');

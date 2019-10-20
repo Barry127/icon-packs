@@ -38,8 +38,6 @@ export default function build() {
         const iconName = makeName(iconFile.slice(0, -4));
         if (!allIconNames.includes(iconName)) {
           const icon = parseXml(fs.readFileSync(fullIconFile, 'utf8'));
-          //@ts-ignore
-          delete icon.attrs['xmlns:xlink'];
 
           allIconNames.push(iconName);
           file = appendToFile(

@@ -70,9 +70,16 @@ function parseAttrs(node: Element): Icon['attrs'] {
   return Object.entries(node.attributes)
     .filter(([key]) => !(key.startsWith('_') || filters.includes(key)))
     .reduce((attrs: Icon['attrs'], [key, value]) => {
+      let name = value.name;
+      if (name === 'xmlns:xlink') {
+        name = 'xmlnsXlink';
+      }
+      if (name === 'xml:space') {
+        name = 'xmlSpace';
+      }
       //@ts-ignore
-      attrs[camelCase(value.name)] = value.value;
-      if (value.name === 'style') {
+      attrs[camelCase(name)] = value.value;
+      if (name === 'style') {
         attrs.style = parseStyle(value.value);
       }
       return attrs;
