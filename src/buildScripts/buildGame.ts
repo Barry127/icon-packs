@@ -5,6 +5,7 @@ import chalk from 'chalk';
 
 import { appendToFile, writeFileToDisc, makeName } from './helpers';
 import { parseXml } from './parseXml';
+import { Icon } from '../types';
 
 const SRC = path.join(__dirname, '..');
 const DIR = path.join(SRC, 'game');
@@ -28,7 +29,10 @@ export default function build() {
     .forEach(iconDir => {
       fs.readdirSync(iconDir).forEach(iconFile => {
         const fullIconFile = path.join(iconDir, iconFile);
-        const icon = parseXml(fs.readFileSync(fullIconFile, 'utf8'));
+        const icon = parseXml(fs.readFileSync(fullIconFile, 'utf8')) as Icon;
+        if (Array.isArray(icon.children)) {
+          icon.children = icon.children.filter((icon, index) => index !== 0);
+        }
         let iconName = makeName(iconFile.slice(0, -4));
         let i = 2;
         while (allIconNames.includes(iconName)) {
