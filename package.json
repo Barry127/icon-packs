@@ -7,14 +7,15 @@
   "license": "MIT",
   "private": false,
   "scripts": {
-    "clear": "rimraf index.* types.* ant blueprint clarity devicons fa feather game ionicons material octicons remix simple typicons weather",
-    "prebuild": "npm run clear",
-    "build": "TS_NODE_COMPILER_OPTIONS='{\"module\":\"commonjs\"}' ts-node src/buildScripts/index.ts && tsc",
-    "postbuild": "rimraf src/ant src/blueprint src/clarity src/devicons src/fa src/feather src/game src/ionicons src/material src/octicons src/remix src/simple src/typicons src/weather",
-    "prepublish": "npm run test:ci & npm run build",
-    "postpublish": "npm run clear",
+    "clear": "yarn ts scripts/clear.ts",
+    "prebuild": "yarn clear",
+    "build": "yarn ts src/buildScripts/index.ts && tsc",
+    "postbuild": "yarn ts scripts/postBuild.ts",
+    "prepublish": "yarn test:ci && yarn build",
+    "postpublish": "yarn clear",
     "test": "jest --watch",
-    "test:ci": "jest"
+    "test:ci": "jest",
+    "ts": "TS_NODE_COMPILER_OPTIONS='{\"module\":\"commonjs\"}' ts-node"
   },
   "repository": {
     "type": "git",
@@ -27,10 +28,11 @@
     "@ant-design/icons-svg": "^4.0.0-alpha.0",
     "@blueprintjs/icons": "^3.11.0",
     "@fortawesome/fontawesome-free": "^5.11.2",
-    "@primer/octicons": "^9.1.1",
+    "@primer/octicons": "^9.2.0",
     "@types/feather-icons": "^4.7.0",
-    "@types/jest": "^24.0.18",
-    "@types/node": "^12.7.12",
+    "@types/jest": "^24.0.19",
+    "@types/node": "^12.11.1",
+    "@types/rimraf": "^2.0.2",
     "@types/xmldom": "^0.1.29",
     "camelcase": "^5.3.1",
     "chalk": "^2.4.2",
@@ -49,7 +51,7 @@
     "xmldom": "^0.1.27"
   },
   "dependencies": {
-    "@types/react": "^16.9.5"
+    "@types/react": "^16.9.9"
   },
   "jest": {
     "transform": {
