@@ -3,7 +3,7 @@ import chalk from 'chalk';
 
 import { packs } from './consts';
 
-console.log(chalk.magenta.bold('postBluid'));
+console.log(chalk.magenta.bold('postBuild'));
 
 packs
   .map(pack => `src/${pack}`)
@@ -12,4 +12,4 @@ packs
     console.log(`deleted ${chalk.italic(file)}`);
   });
 
-console.log(chalk.magenta.bold(`postBluid [${chalk.green('Done')}]`));
+console.log(chalk.magenta.bold(`postBuild [${chalk.green('Done')}]`));

@@ -9,6 +9,7 @@ const { DOMParser } = xmldom;
 const filters = ['length'];
 
 export const parseXml = (xml: string): Icon | string => {
+  xml = xml.replace(/aria\-hidden/g, '');
   const doc = new DOMParser().parseFromString(xml);
   if (doc.childNodes.length === 0) {
     return xml;
@@ -37,7 +38,7 @@ const parseNodes = (nodes: NodeListOf<any>): Icon[] | string => {
   }
 
   return parsedNodes
-    .filter(node => !(typeof node === 'string'))
+    .filter(node => node !== null && !(typeof node === 'string'))
     .map(n => {
       const node = n as Icon;
       if (node.children && node.children!.length === 0) {
@@ -54,14 +55,20 @@ const parseNodes = (nodes: NodeListOf<any>): Icon[] | string => {
     });
 };
 
-function parseNode(node: Element): Icon | string {
+function parseNode(node: Element): Icon | string | null {
   if (node.nodeValue) {
     return node.nodeValue;
   }
 
+  const attrs = parseAttrs(node);
+  if (attrs.fill === 'none') {
+    return null;
+  }
+  delete attrs.fill;
+
   return {
     tag: node.nodeName as Icon['tag'],
-    attrs: parseAttrs(node),
+    attrs,
     children: parseNodes(node.childNodes)
   };
 }
@@ -82,6 +89,7 @@ function parseAttrs(node: Element): Icon['attrs'] {
       if (name === 'style') {
         attrs.style = parseStyle(value.value);
       }
+
       return attrs;
     }, {});
 }
