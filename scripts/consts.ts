@@ -15,4 +15,4 @@ export const packs = [
   'weather'
 ];
 
-export const productionFiles = ['index.*', 'types.*', ...packs];
+export const productionFiles = ['index.*', 'types.*', 'cjs', ...packs];

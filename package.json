@@ -8,8 +8,10 @@
   "private": false,
   "scripts": {
     "clear": "yarn ts scripts/clear.ts",
-    "prebuild": "yarn clear",
-    "build": "yarn ts src/buildScripts/index.ts && tsc",
+    "prebuild": "yarn clear && yarn ts src/buildScripts/index.ts",
+    "build:es6": "tsc",
+    "build:cjs": "tsc -m commonjs --outDir cjs",
+    "build": "yarn build:es6 && yarn build:cjs",
     "postbuild": "yarn ts scripts/postBuild.ts",
     "prepublish": "yarn test:ci && yarn build",
     "postpublish": "yarn clear",

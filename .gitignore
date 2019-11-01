@@ -1,6 +1,7 @@
 # Production files
 /index.*
 /types.*
+/cjs
 
 /ant
 /src/ant

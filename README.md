@@ -73,6 +73,8 @@ Icons with reserved filenames like `delete` or `export` are postfixed with an un
 
 Icons starting with a number like `4K` are prefixed with an underscore: `_4K`.
 
+> Icon Packs exports all icons as es6 modules to enable tree shaking by default in most bundlers. Some environments only work with CommonJS. Icon Packs also exports icons in CommonJS format in the cjs directory: e.g. `import { activity } from 'icon-packs/cjs/feather`
+
 ## Icons
 
 - [**Ant Design Icons**](https://ant.design/components/icon) License: [MIT License](https://github.com/ant-design/ant-design-icons/blob/master/packages/icons/package.json)
