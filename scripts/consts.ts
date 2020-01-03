@@ -7,6 +7,7 @@ export const packs = [
   'feather',
   'game',
   'ionicons',
+  'jam',
   'material',
   'octicons',
   'remix',
