@@ -7,3 +7,6 @@
 [submodule "submodules/clarity-icons"]
 	path = submodules/clarity-icons
 	url = https://github.com/vmware/clarity-assets
+[submodule "submodules/jam"]
+	path = submodules/jam
+	url = https://github.com/michaelampr/jam
