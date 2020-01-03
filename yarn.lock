@@ -2,10 +2,10 @@
 # yarn lockfile v1
 
 
-"@ant-design/icons-svg@^4.0.0-alpha.0":
-  version "4.0.0-alpha.0"
-  resolved "https://registry.yarnpkg.com/@ant-design/icons-svg/-/icons-svg-4.0.0-alpha.0.tgz#c9e2607f463291a1fc73418969b7708cceceffb9"
-  integrity sha512-uK0/hQvXShhcXfSoNZqG4wWQx8l13FoKCqICC/kkeguXyKixueJEC+C6/X26HAtqXJcBmMZEuaT2AlLYs8xdZg==
+"@ant-design/icons-svg@^4.0.0-alpha.5":
+  version "4.0.0-alpha.5"
+  resolved "https://registry.yarnpkg.com/@ant-design/icons-svg/-/icons-svg-4.0.0-alpha.5.tgz#292c235a9be73ccc6109becdd7cb385216cc7c3a"
+  integrity sha512-rL/1rDmbBu0zdBtIWte9TiGbxKBcR32Tq4ix57C7EBj33i6bpkUJr2wZKs3tGGEkUgqRKBXo38QSuXx0Vu7wNw==
 
 "@babel/code-frame@^7.0.0", "@babel/code-frame@^7.5.5":
   version "7.5.5"
@@ -135,10 +135,10 @@
     lodash "^4.17.13"
     to-fast-properties "^2.0.0"
 
-"@blueprintjs/icons@^3.11.0":
-  version "3.11.0"
-  resolved "https://registry.yarnpkg.com/@blueprintjs/icons/-/icons-3.11.0.tgz#c104cecef6893f8b7b7d8d8951f51d47f3f08403"
-  integrity sha512-HGS652gFc057t9cr8NyuWFyZ1gcSqG3uuexpzhZm81W35hGfh9vdC9GR+mbHJNawAuKXtu+xw4VWWkv1UGQ0Vg==
+"@blueprintjs/icons@^3.13.0":
+  version "3.13.0"
+  resolved "https://registry.yarnpkg.com/@blueprintjs/icons/-/icons-3.13.0.tgz#bff93a9ea5ced03afd2b3a65ddf4bb90bda485e4"
+  integrity sha512-fvXGsAJ66SSjeHv3OeXjLEdKdPJ3wVztjhJQCAd51uebhj3FJ16EDDvO7BqBw5FyVkLkU11KAxSoCFZt7TC9GA==
   dependencies:
     classnames "^2.2"
     tslib "~1.9.0"
@@ -151,10 +151,10 @@
     exec-sh "^0.3.2"
     minimist "^1.2.0"
 
-"@fortawesome/fontawesome-free@^5.11.2":
-  version "5.11.2"
-  resolved "https://registry.yarnpkg.com/@fortawesome/fontawesome-free/-/fontawesome-free-5.11.2.tgz#8644bc25b19475779a7b7c1fc104bc0a794f4465"
-  integrity sha512-XiUPoS79r1G7PcpnNtq85TJ7inJWe0v+b5oZJZKb0pGHNIV6+UiNeQWiFGmuQ0aj7GEhnD/v9iqxIsjuRKtEnQ==
+"@fortawesome/fontawesome-free@^5.12.0":
+  version "5.12.0"
+  resolved "https://registry.yarnpkg.com/@fortawesome/fontawesome-free/-/fontawesome-free-5.12.0.tgz#8ceb9f09edfb85ea18a6c7bf098f6f5dd5ffd62b"
+  integrity sha512-vKDJUuE2GAdBERaQWmmtsciAMzjwNrROXA5KTGSZvayAsmuTGjam5z6QNqNPCwDfVljLWuov1nEC3mEQf/n6fQ==
 
 "@jest/console@^24.7.1", "@jest/console@^24.9.0":
   version "24.9.0"
@@ -304,10 +304,10 @@
     "@types/istanbul-reports" "^1.1.1"
     "@types/yargs" "^13.0.0"
 
-"@primer/octicons@^9.2.0":
-  version "9.2.0"
-  resolved "https://registry.yarnpkg.com/@primer/octicons/-/octicons-9.2.0.tgz#705783d57335c4ffbde4650e4d22302947208c6e"
-  integrity sha512-3vv7bBqVUHhU7ChpmQhmzz3WmHEKKSk9z/xEK5KnU8Egh96RoqKIim07geRj825ISa+IWj9cPdOA1ShqW5k3Yw==
+"@primer/octicons@^9.3.1":
+  version "9.3.1"
+  resolved "https://registry.yarnpkg.com/@primer/octicons/-/octicons-9.3.1.tgz#adc2673d9d4f5dae2e829679df3e2d1078a10ed8"
+  integrity sha512-E0Knv/hUfwpfJOVh7cPXXJf6gfNiIMBtMbhnqjkWHnpT/+bPJk4Q3l/YG6sCWELZ05KYpHBunpHNOlTyw3mbwg==
   dependencies:
     object-assign "^4.1.1"
 
@@ -1252,10 +1252,10 @@ fb-watchman@^2.0.0:
   dependencies:
     bser "^2.0.0"
 
-feather-icons@^4.24.1:
-  version "4.24.1"
-  resolved "https://registry.yarnpkg.com/feather-icons/-/feather-icons-4.24.1.tgz#f31a83c5a2d1c040576aacb7882d8acdfb7f7f09"
-  integrity sha512-CGBzG9L9M2sNWEpLY2HJgacW4q1KzypMqLiCPQRr6t4uDDXqYprWRWKcHEwD/vDDiDnkSS7N4L5BLYwjGGH8pw==
+feather-icons@^4.25.0:
+  version "4.25.0"
+  resolved "https://registry.yarnpkg.com/feather-icons/-/feather-icons-4.25.0.tgz#2073009bf7fee800a2da1d0a7d14b1ee98e77258"
+  integrity sha512-gIJbA4Kmzqub+eTwqA3LRJhC+G267t7QlvFxx+nnHYEEaCpXh5HwRY9pW39b51/Y8c7D9mjLplNdzGCWPz39Sg==
   dependencies:
     classnames "^2.2.5"
     core-js "^3.1.3"
@@ -2910,10 +2910,10 @@ regex-not@^1.0.0, regex-not@^1.0.2:
     extend-shallow "^3.0.2"
     safe-regex "^1.1.0"
 
-remixicon@^2.0.0:
-  version "2.0.0"
-  resolved "https://registry.yarnpkg.com/remixicon/-/remixicon-2.0.0.tgz#65ba15651ed575882f1e4059b9aae7d14625d9ee"
-  integrity sha512-dXCuXawug6pegCsYtOaHIQIg1DHvKwOk3WzK2pvS+nNw/3dDn/ezHoQhoZWjZS/iGOx75nXvwHwSJS7znHVv3w==
+remixicon@^2.1.0:
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/remixicon/-/remixicon-2.1.0.tgz#cc53b8c3ed0210894ae12228b0f568df507e4a5b"
+  integrity sha512-6f2IzIDveqoNzi9/s84MeK064t89gJFdWsTDYt/IG3E03Ho4YQTu/3U8grM9nKRNL7FuTCixMypwqFzqzKlTzA==
 
 remove-trailing-separator@^1.0.1:
   version "1.1.0"
@@ -3124,10 +3124,10 @@ signal-exit@^3.0.0, signal-exit@^3.0.2:
   resolved "https://registry.yarnpkg.com/signal-exit/-/signal-exit-3.0.2.tgz#b5fdc08f1287ea1178628e415e25132b73646c6d"
   integrity sha1-tf3AjxKH6hF4Yo5BXiUTK3NkbG0=
 
-simple-icons@^1.18.0:
-  version "1.18.0"
-  resolved "https://registry.yarnpkg.com/simple-icons/-/simple-icons-1.18.0.tgz#2350d15389771412ec7301d525d6ed6277a1d017"
-  integrity sha512-zarcqLq6DL96q7rSHeh/bM/xlflp1Uil7lyz7KHK4bg+92vcA+BJ1CpjA62Xe1KnfeOSEmTXHR6ftaFYiaSaNQ==
+simple-icons@^2.1.0:
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/simple-icons/-/simple-icons-2.1.0.tgz#6c2b1ab038143e6e3830bdc33094b48b73a78a5d"
+  integrity sha512-Xw7SgYJSFxEH86vL/1Cz5IVAhmkNa2zHLFwtRoCkH/UpocyQxciLixSUiniARNy/e+/59AhILXRUkBIIP7Tz8g==
 
 sisteransi@^1.0.3:
   version "1.0.3"

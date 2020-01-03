@@ -84,6 +84,11 @@ function parseAttrs(node: Element): Icon['attrs'] {
       if (name === 'xml:space') {
         name = 'xmlSpace';
       }
+
+      if (name.startsWith('data')) {
+        return attrs;
+      }
+
       //@ts-ignore
       attrs[camelCase(name)] = value.value;
       if (name === 'style') {
