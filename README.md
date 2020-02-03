@@ -19,6 +19,7 @@ yarn add icon-packs
 ```js
 import { accountBookFill } from 'icons-packs/ant';
 import { add } from 'icon-packs/blueprint';
+import { alarmFill } from 'icon-packs/bootstrap';
 import { accessibility1Line } from 'icon-packs/clarity';
 import { android } from 'icon-packs/devicons';
 import { _500Px } from 'icon-packs/fa';
@@ -80,6 +81,7 @@ Icons starting with a number like `4K` are prefixed with an underscore: `_4K`.
 
 - [**Ant Design Icons**](https://ant.design/components/icon) License: [MIT License](https://github.com/ant-design/ant-design-icons/blob/master/packages/icons/package.json)
 - [**Blueprint Icons**](https://blueprintjs.com/docs/#icons) License: [Apache License Version 2.0](https://github.com/palantir/blueprint/blob/develop/packages/icons/LICENSE)
+- [**Bootstrap Icons**](https://icons.getbootstrap.com) License: [MIT License](https://github.com/twbs/icons/blob/master/LICENSE.md)
 - [**Clarity Icons**](https://clarity.design/icons) License: [MIT License](https://github.com/vmware/clarity-assets/blob/master/LICENSE)
 - [**Devicons**](https://vorillaz.github.io/devicons) License: [MIT License](https://opensource.org/licenses/MIT)
 - [**Feather Icons**](https://feathericons.com) License: [MIT License](https://github.com/feathericons/feather/blob/master/LICENSE)

@@ -1,5 +1,6 @@
 export { buildAnt } from './ant';
 export { buildBlueprint } from './blueprint';
+export { buildBootstrap } from './bootstrap';
 export { buildClarity } from './clarity';
 export { buildDevicons } from './devicons';
 export { buildFa } from './fa';

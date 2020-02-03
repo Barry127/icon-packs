@@ -1,3 +1,14 @@
+## 0.8.0
+
+### All changes
+
+v0.8.0 adds Bootstrap Icons and upgrades to icon libraries.
+
+- Add Bootstrap Icons `1.0.0-alpha2`
+- Upgrade Ant Design Icons from `4.0.0-alpha.5` to `4.0.0-rc.0`
+- Upgrade Remix Icon from `2.1.0` to `2.2.0`
+- Upgrade Simple Icons from `2.1.0` to `2.3.0`
+
 ## 0.7.0
 
 v0.7.0 adds JAM Icons and upgrades to icon libraries.

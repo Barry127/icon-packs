@@ -62,6 +62,7 @@
     "src/index.ts",
     "src/ant",
     "src/blueprint",
+    "src/bootstrap",
     "src/clarity",
     "src/devicons",
     "src/fa",

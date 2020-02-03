@@ -1,6 +1,7 @@
 export const packs = [
   'ant',
   'blueprint',
+  'bootstrap',
   'clarity',
   'devicons',
   'fa',
