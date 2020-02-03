@@ -27,6 +27,7 @@ import { activity } from 'icon-packs/feather';
 import { _3DHammer } from 'icon-packs/game';
 import { iosAdd } from 'icon-packs/ionicons';
 import { alarmClock } from 'icon-packs/jam';
+import { accessibleIcon } from 'icon-packs/la';
 import { _3DRotation24 } from 'icon-packs/material';
 import { alert } from 'icon-packs/octicons';
 import { _4KFill } from 'icon-packs/remix';
@@ -90,6 +91,7 @@ Icons starting with a number like `4K` are prefixed with an underscore: `_4K`.
 - [**GitHub Octicons**](https://octicons.github.com/) :License [MIT License](https://github.com/primer/octicons/blob/master/LICENSE)
 - [**Ionicons**](https://ionicons.com) License [MIT License](https://github.com/ionic-team/ionicons/blob/master/LICENSE)
 - [**JAM Icons**](https://jam-icons.com/) License [MIT License](https://github.com/michaelampr/jam/blob/master/LICENSE)
+- [**Line Awesome Icons**](https://icons8.com/line-awesome) License [MIT License](https://github.com/icons8/line-awesome/blob/master/LICENSE.md)
 - [**Material Icons**](http://google.github.io/material-design-icons) License [Apache License Version 2.0](https://github.com/google/material-design-icons/blob/master/LICENSE)
 - [**Remix Icon**](https://remixicon.com) License: [Apache License Version 2.0](https://github.com/Remix-Design/RemixIcon/blob/master/License)
 - [**Simple Icons**](https://simpleicons.org) License [CC0 1.0 Universal](https://github.com/simple-icons/simple-icons/blob/develop/LICENSE.md)

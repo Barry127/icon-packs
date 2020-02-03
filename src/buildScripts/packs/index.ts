@@ -8,6 +8,7 @@ export { buildFeather } from './feather';
 export { buildGame } from './game';
 export { buildIonicons } from './ionicons';
 export { buildJAM } from './jam';
+export { buildLa } from './la';
 export { buildMaterial } from './material';
 export { buildOcticons } from './octicons';
 export { buildRemix } from './remix';

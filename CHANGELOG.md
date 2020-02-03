@@ -2,9 +2,10 @@
 
 ### All changes
 
-v0.8.0 adds Bootstrap Icons and upgrades to icon libraries.
+v0.8.0 adds Bootstrap Icons, Line Awesome icons and upgrades to icon libraries.
 
 - Add Bootstrap Icons `1.0.0-alpha2`
+- Add Line Awesome Icons `1.3.0`
 - Upgrade Ant Design Icons from `4.0.0-alpha.5` to `4.0.0-rc.0`
 - Upgrade Remix Icon from `2.1.0` to `2.2.0`
 - Upgrade Simple Icons from `2.1.0` to `2.3.0`
