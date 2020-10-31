@@ -1,11 +1,18 @@
 import rimraf from 'rimraf';
 import chalk from 'chalk';
 
-import { productionFiles } from './consts';
+import { packs, productionFiles } from './consts';
 
 console.log(chalk.magenta.bold('Clear Build'));
 
-productionFiles.forEach(file => {
+packs
+  .map((pack) => `src/${pack}`)
+  .forEach((file) => {
+    rimraf.sync(file);
+    console.log(`deleted ${chalk.italic(file)}`);
+  });
+
+productionFiles.forEach((file) => {
   rimraf.sync(file);
   console.log(`deleted ${chalk.italic(file)}`);
 });

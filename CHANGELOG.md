@@ -1,3 +1,10 @@
+## 0.8.1
+
+v0.8.1 improves module support.
+
+- Add `module` and `main` exports in package.json
+- Change module file extensions from `.js` to `.mjs`
+
 ## 0.8.0
 
 ### All changes
