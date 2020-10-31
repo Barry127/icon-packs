@@ -1,6 +1,6 @@
 {
   "name": "icon-packs",
-  "version": "0.8.0",
+  "version": "0.8.1",
   "description": "Icons for react",
   "main": "cjs/index.js",
   "module": "index.js",
