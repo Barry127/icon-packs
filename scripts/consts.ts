@@ -3,6 +3,7 @@ export const packs = [
   'blueprint',
   'bootstrap',
   'clarity',
+  'cssgg',
   'devicons',
   'fa',
   'feather',

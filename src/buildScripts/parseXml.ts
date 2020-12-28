@@ -38,8 +38,8 @@ const parseNodes = (nodes: NodeListOf<any>): Icon[] | string => {
   }
 
   return parsedNodes
-    .filter(node => node !== null && !(typeof node === 'string'))
-    .map(n => {
+    .filter((node) => node !== null && !(typeof node === 'string'))
+    .map((n) => {
       const node = n as Icon;
       if (node.children && node.children!.length === 0) {
         delete node.children;
@@ -61,10 +61,10 @@ function parseNode(node: Element): Icon | string | null {
   }
 
   const attrs = parseAttrs(node);
-  if (attrs.fill === 'none') {
+  if (attrs.fill === 'none' && node.nodeName !== 'svg') {
     return null;
   }
-  delete attrs.fill;
+  if (attrs.fill !== 'currentColor') delete attrs.fill;
 
   return {
     tag: node.nodeName as Icon['tag'],
@@ -102,7 +102,7 @@ function parseAttrs(node: Element): Icon['attrs'] {
 function parseStyle(style: string): CSSProperties {
   const styles = {} as CSSProperties;
 
-  style.split(';').forEach(rule => {
+  style.split(';').forEach((rule) => {
     if ((rule.match(/\:/g) || []).length === 1) {
       const [key, value] = rule.split(':');
       //@ts-ignore

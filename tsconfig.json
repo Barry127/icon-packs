@@ -64,6 +64,7 @@
     "src/blueprint",
     "src/bootstrap",
     "src/clarity",
+    "src/cssgg",
     "src/devicons",
     "src/fa",
     "src/feather",

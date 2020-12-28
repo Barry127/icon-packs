@@ -2,6 +2,7 @@ export { buildAnt } from './ant';
 export { buildBlueprint } from './blueprint';
 export { buildBootstrap } from './bootstrap';
 export { buildClarity } from './clarity';
+export { buildCssGg } from './cssgg';
 export { buildDevicons } from './devicons';
 export { buildFa } from './fa';
 export { buildFeather } from './feather';
