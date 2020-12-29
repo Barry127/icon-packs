@@ -6,8 +6,6 @@ import { CSSProperties } from 'react';
 
 const { DOMParser } = xmldom;
 
-const filters = ['length'];
-
 export const parseXml = (xml: string): Icon | string => {
   xml = xml.replace(/aria\-hidden/g, '');
   const doc = new DOMParser().parseFromString(xml);
@@ -56,6 +54,9 @@ const parseNodes = (nodes: NodeListOf<any>): Icon[] | string => {
 };
 
 function parseNode(node: Element): Icon | string | null {
+  if (node.nodeName.toLocaleLowerCase().includes('metadata')) return null;
+  if (node.nodeName.toLocaleLowerCase().includes('sodipodi')) return null;
+
   if (node.nodeValue) {
     return node.nodeValue;
   }
@@ -73,16 +74,39 @@ function parseNode(node: Element): Icon | string | null {
   };
 }
 
+const filters = ['length'];
+const attrFilters = [
+  'xmlns:cc',
+  'xmlns:dc',
+  'xmlns:inkscape',
+  'xmlns:rdf',
+  'xmlns:sodipodi',
+  'xmlns:svg'
+];
+
 function parseAttrs(node: Element): Icon['attrs'] {
   return Object.entries(node.attributes)
-    .filter(([key]) => !(key.startsWith('_') || filters.includes(key)))
+    .filter(
+      ([key, value]) =>
+        !(
+          key.startsWith('_') ||
+          (value.name && value.name.startsWith('inkscape')) ||
+          (value.name && value.name.startsWith('sodipodi')) ||
+          key.startsWith('inkscape') ||
+          filters.includes(key) ||
+          attrFilters.includes(value.name)
+        )
+    )
     .reduce((attrs: Icon['attrs'], [key, value]) => {
       let name = value.name;
-      if (name === 'xmlns:xlink') {
-        name = 'xmlnsXlink';
-      }
-      if (name === 'xml:space') {
-        name = 'xmlSpace';
+      if (name.includes(':')) {
+        name = name
+          .split(':')
+          .map((part, index) => {
+            if (index === 0) return part;
+            return `${part.slice(0, 1).toUpperCase()}${part.slice(1)}`;
+          })
+          .join('');
       }
 
       if (name.startsWith('data')) {
@@ -99,14 +123,31 @@ function parseAttrs(node: Element): Icon['attrs'] {
     }, {});
 }
 
+const styleFilters = [
+  'blockProgression',
+  'enableBackground',
+  'solidColor',
+  'textDecorationColor'
+];
+const numericKeys = ['fillOpacity', 'strokeMiterlimit', 'strokeOpacity'];
+
 function parseStyle(style: string): CSSProperties {
   const styles = {} as CSSProperties;
 
   style.split(';').forEach((rule) => {
     if ((rule.match(/\:/g) || []).length === 1) {
       const [key, value] = rule.split(':');
+      const camelKey = camelCase(key);
+
+      if (styleFilters.includes(camelKey)) return;
+
       //@ts-ignore
-      styles[camelCase(key)] = value.trim();
+      styles[camelKey] = value.trim();
+
+      if (numericKeys.includes(camelKey) && !isNaN(Number(value))) {
+        //@ts-ignore
+        styles[camelKey] = Number(value);
+      }
     }
   });
 
