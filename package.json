@@ -38,7 +38,7 @@
     "@types/node": "^12.11.1",
     "@types/rimraf": "^2.0.2",
     "@types/xmldom": "^0.1.29",
-    "bootstrap-icons": "^1.0.0-alpha2",
+    "bootstrap-icons": "^1.2.2",
     "camelcase": "^5.3.1",
     "chalk": "^2.4.2",
     "css.gg": "^2.0.0",
