@@ -10,7 +10,8 @@ export const reservedNames = [
   'import',
   'package',
   'private',
-  'static'
+  'static',
+  'switch'
 ];
 
 export const makeName = (name: string) => {
