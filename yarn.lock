@@ -304,10 +304,10 @@
     "@types/istanbul-reports" "^1.1.1"
     "@types/yargs" "^13.0.0"
 
-"@primer/octicons@^9.3.1":
-  version "9.3.1"
-  resolved "https://registry.yarnpkg.com/@primer/octicons/-/octicons-9.3.1.tgz#adc2673d9d4f5dae2e829679df3e2d1078a10ed8"
-  integrity sha512-E0Knv/hUfwpfJOVh7cPXXJf6gfNiIMBtMbhnqjkWHnpT/+bPJk4Q3l/YG6sCWELZ05KYpHBunpHNOlTyw3mbwg==
+"@primer/octicons@^11.2.0":
+  version "11.2.0"
+  resolved "https://registry.yarnpkg.com/@primer/octicons/-/octicons-11.2.0.tgz#2caaa3a6e56f549be53b4d4004d383fd1120288b"
+  integrity sha512-a9ORJaeu7Kt0LCaawQy8S+ZVPDe1qXJvKZraX0b6R0KXkXjL519rpGUDRiGUlskuxEpVf2kmbVYfqGDDlMGLMg==
   dependencies:
     object-assign "^4.1.1"
 

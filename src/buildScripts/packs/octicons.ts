@@ -21,17 +21,15 @@ export const buildOcticons = () =>
   );
 
 function createIcon(packIcon: Octicon): Icon {
-  const children = [parseXml(packIcon.path) as Icon];
-  const attrs = Object.entries(packIcon.options).reduce(
-    (attrs, [key, value]) => {
-      //@ts-ignore
-      attrs[camelCase(key === 'class' ? 'className' : key)] = value;
-      return attrs;
-    },
-    {} as Icon['attrs']
-  );
+  const icon = packIcon.heights['24'] || packIcon.heights['16'];
+  const children = [parseXml(icon.path) as Icon];
+  const attrs = Object.entries(icon.options).reduce((attrs, [key, value]) => {
+    //@ts-ignore
+    attrs[camelCase(key === 'class' ? 'className' : key)] = value;
+    return attrs;
+  }, {} as Icon['attrs']);
 
-  //@ts-ignore
+  // @ts-ignore
   delete attrs.ariaHidden;
 
   return {
@@ -43,9 +41,10 @@ function createIcon(packIcon: Octicon): Icon {
 
 interface Octicon {
   keywords: string[];
-  path: string;
-  height: string;
-  width: string;
+  heights: {
+    16: any;
+    24: any;
+  };
   symbol: string;
   options: OcticonOptions;
   toSVG: (options?: OcticonOptions) => string;
