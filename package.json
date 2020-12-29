@@ -29,7 +29,7 @@
     "url": "https://github.com/Barry127/icons-pack/issues"
   },
   "devDependencies": {
-    "@ant-design/icons-svg": "^4.0.0-rc.0",
+    "@ant-design/icons-svg": "^4.1.0",
     "@blueprintjs/icons": "^3.13.0",
     "@fortawesome/fontawesome-free": "^5.12.0",
     "@primer/octicons": "^9.3.1",
