@@ -2,7 +2,6 @@ import path from 'path';
 
 import { buildFactory } from '../buildFactory';
 import { fromDirectory } from '../builders';
-import { Icon } from '../../types';
 
 const ICONS_DIR = path.join(
   __dirname,
@@ -11,7 +10,7 @@ const ICONS_DIR = path.join(
   '..',
   'submodules',
   'jam',
-  'svg'
+  'icons'
 );
 
 export const buildJAM = () =>
@@ -19,7 +18,6 @@ export const buildJAM = () =>
     {
       name: 'JAM Icons',
       target: 'jam'
-      // transformIcon
     },
     fromDirectory(ICONS_DIR)
   );
