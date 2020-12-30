@@ -1,3 +1,8 @@
+## 0.10.0
+
+- Fix GitHub Octicons build of icons with multiple paths
+- Upgrade Simple Icons from `2.3.0` to `4.4.0`
+
 ## 0.9.0
 
 v0.9.0 adds css.gg Icons and upgrades icon libraries
