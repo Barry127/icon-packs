@@ -23,6 +23,7 @@ export const makeName = (name: string) => {
   name = name.replace(/\'/g, '');
   name = name.replace(/\’/g, '');
   name = name.replace(/\!/g, '');
+  name = name.replace(/\:/g, '_');
 
   const iconName = camelCase(name);
   return iconName.match(/^\d/)
