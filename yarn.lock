@@ -2908,10 +2908,10 @@ regex-not@^1.0.0, regex-not@^1.0.2:
     extend-shallow "^3.0.2"
     safe-regex "^1.1.0"
 
-remixicon@^2.2.0:
-  version "2.2.0"
-  resolved "https://registry.yarnpkg.com/remixicon/-/remixicon-2.2.0.tgz#ec421352fbb0f4e2fe38d1ba524b1ac7ace0a020"
-  integrity sha512-wmTHS2Z/T+vfUAsRZnDDbfBzx1qgdkiqgdGgpITJi554cy7HnX6IoJ5eSXHdCHgJGDuKSzOSwYXpKjPrkBjLSg==
+remixicon@^2.5.0:
+  version "2.5.0"
+  resolved "https://registry.yarnpkg.com/remixicon/-/remixicon-2.5.0.tgz#b5e245894a1550aa23793f95daceadbf96ad1a41"
+  integrity sha512-q54ra2QutYDZpuSnFjmeagmEiN9IMo56/zz5dDNitzKD23oFRw77cWo4TsrAdmdkPiEn8mxlrTqxnkujDbEGww==
 
 remove-trailing-separator@^1.0.1:
   version "1.1.0"
