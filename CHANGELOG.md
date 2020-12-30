@@ -1,3 +1,21 @@
+## 0.9.0
+
+v0.9.0 adds css.gg Icons and upgrades icon libraries
+
+- Add css.gg Icons `2.0.0`
+- Upgrade Ant Design Icons from `4.0.0-rc.0` to `4.1.0`
+- Upgrade Blueprint Icons from `3.13.0` to `3.23.0`
+- Upgrade Bootstrap Icons from `1.0.0-alpha2` to `1.2.2`
+- Upgrade Clarity Icons to latest
+- Upgrade Devicons from `1.8.0` to `2.2.0`
+- Upgrade Feather Icons from `4.25.0` to `4.28.0`
+- Upgrade Font Awesome from `5.12.0` to `5.15.1`
+- Upgrade Game Icons to latest
+- Upgrade Ionicons from `4.6.3` to `5.2.3`
+- Upgrade JAM Icons from `2.0.0` to `3.1.0`
+- Upgrade Octicons from `9.3.1` to `11.2.0`
+- Upgrade Remix Icon from `2.2.0` to `2.5.0`
+
 ## 0.8.1
 
 v0.8.1 improves module support.

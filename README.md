@@ -21,6 +21,7 @@ import { accountBookFill } from 'icons-packs/ant';
 import { add } from 'icon-packs/blueprint';
 import { alarmFill } from 'icon-packs/bootstrap';
 import { accessibility1Line } from 'icon-packs/clarity';
+import { add } from 'icon-packs/cssgg';
 import { android } from 'icon-packs/devicons';
 import { _500Px } from 'icon-packs/fa';
 import { activity } from 'icon-packs/feather';
@@ -84,6 +85,7 @@ Icons starting with a number like `4K` are prefixed with an underscore: `_4K`.
 - [**Blueprint Icons**](https://blueprintjs.com/docs/#icons) License: [Apache License Version 2.0](https://github.com/palantir/blueprint/blob/develop/packages/icons/LICENSE)
 - [**Bootstrap Icons**](https://icons.getbootstrap.com) License: [MIT License](https://github.com/twbs/icons/blob/master/LICENSE.md)
 - [**Clarity Icons**](https://clarity.design/icons) License: [MIT License](https://github.com/vmware/clarity-assets/blob/master/LICENSE)
+- [**css.gg Icons**](https://css.gg) License: [MIT License](https://github.com/astrit/css.gg/blob/master/LICENSE)
 - [**Devicons**](https://vorillaz.github.io/devicons) License: [MIT License](https://opensource.org/licenses/MIT)
 - [**Feather Icons**](https://feathericons.com) License: [MIT License](https://github.com/feathericons/feather/blob/master/LICENSE)
 - [**Font Awesome Free**](https://fontawesome.com/) License: [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)
