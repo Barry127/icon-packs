@@ -6,7 +6,7 @@ import { CSSProperties } from 'react';
 
 const { DOMParser } = xmldom;
 
-export const parseXml = (xml: string): Icon | string => {
+export const parseXml = (xml: string, wrapInDiv = true): Icon | string => {
   xml = xml.replace(/aria\-hidden/g, '');
   const doc = new DOMParser().parseFromString(xml);
   if (doc.childNodes.length === 0) {
@@ -18,11 +18,14 @@ export const parseXml = (xml: string): Icon | string => {
   if (nodes.length === 1) {
     return nodes[0];
   } else {
-    return {
-      tag: 'div',
-      attrs: {},
-      children: nodes
-    };
+    //@ts-ignore
+    return wrapInDiv
+      ? {
+          tag: 'div',
+          attrs: {},
+          children: nodes
+        }
+      : nodes;
   }
 };
 

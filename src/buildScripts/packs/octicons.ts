@@ -7,6 +7,8 @@ import { fromValues } from '../builders';
 import { parseXml } from '../parseXml';
 import { Icon } from '../../types';
 
+console.log(octicons.alert);
+
 export const buildOcticons = () =>
   buildFactory(
     {
@@ -22,7 +24,7 @@ export const buildOcticons = () =>
 
 function createIcon(packIcon: Octicon): Icon {
   const icon = packIcon.heights['24'] || packIcon.heights['16'];
-  const children = [parseXml(icon.path) as Icon];
+  const children = parseXml(icon.path, false) as Icon;
   const attrs = Object.entries(icon.options).reduce((attrs, [key, value]) => {
     //@ts-ignore
     attrs[camelCase(key === 'class' ? 'className' : key)] = value;
@@ -35,7 +37,7 @@ function createIcon(packIcon: Octicon): Icon {
   return {
     tag: 'svg',
     attrs,
-    children
+    children: Array.isArray(children) ? children : [children]
   };
 }
 
